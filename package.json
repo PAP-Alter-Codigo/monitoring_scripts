@@ -2,6 +2,8 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.637.0",
     "aws-sdk": "^2.1684.0",
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "dynamoose": "^4.0.4",
+    "lodash": "^4.17.21"
   }
 }
