@@ -1,9 +1,15 @@
 {
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.637.0",
-    "aws-sdk": "^2.1684.0",
+    "archiver": "^7.0.1",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.10.0",
     "csv-parser": "^3.0.0",
     "dynamoose": "^4.0.4",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "rimraf": "^6.0.1"
+  },
+  "scripts": {
+    "zip": "rimraf lambda.zip && node zip-lambda.js"
   }
 }
