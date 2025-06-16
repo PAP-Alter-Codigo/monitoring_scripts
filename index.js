@@ -227,14 +227,14 @@ async function migration() {
 
     const currentTags = await uploadTags(tags);
     const currentLocations = await uploadLocations(Locations);
-    /*
     const cleanedData = replaceNamesWithIds(data, currentTags, currentLocations);
     const currentArticles = await uploadArticles(cleanedData);
+    /*
     const groupedData = _.groupBy(data, 'actor');
     const currentActors = await uploadActors(groupedData, currentArticles);
     await addActorIdToArticles(currentActors);
     */
-    console.log('Migration completed successfully.');
+   console.log('Migration completed successfully.');
   } catch (error) {
     console.error('Migration failed:', error);
   }
